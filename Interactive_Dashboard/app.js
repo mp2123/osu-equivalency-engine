@@ -445,6 +445,14 @@ I believe this project satisfies the 75% content alignment requirement for a dir
         setTimeout(() => compareModal.classList.add('show'), 10);
     };
 
+    const closeModal = () => {
+        modal.classList.remove('show');
+        document.body.style.overflow = 'auto'; // Re-enable background scrolling
+        setTimeout(() => modal.style.display = 'none', 300);
+    };
+
+    closeBtn.onclick = closeModal;
+
     const closeCompareModal = () => {
         compareModal.classList.remove('show');
         document.body.style.overflow = 'auto';
