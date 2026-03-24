@@ -1,0 +1,19 @@
+# Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# macOS
+.DS_Store
+
+# Temporary files
+local_tmp/
+.gemini/
+*.log
+
+# Node/NPM (Just in case you add it later)
+node_modules/
+package-lock.json
