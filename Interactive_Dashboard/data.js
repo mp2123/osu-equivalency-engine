@@ -1,5 +1,36 @@
 window.courseData = [
   {
+    "institution": "Oregon State University (TARGET)",
+    "course": "MRKT 496",
+    "modality": "In-Person / Online (Ecampus)",
+    "credits": "4 Qtr",
+    "accreditation": "AACSB",
+    "tier": 1,
+    "availability": "Fall (Sep 23) / Spring (Mar 30)",
+    "justification": "[BASELINE STANDARD]: The definitive requirement. Demands practical, hands-on experience in the collection, analysis, and interpretation of primary data.",
+    "matchScore": 100,
+    "tuitionEstimate": "$1,644 (Ecampus) / $1,765 (In-State)",
+    "radarData": [
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "links": [
+      {
+        "title": "Verify Department Domain",
+        "url": "https://business.oregonstate.edu/"
+      },
+      {
+        "title": "View Direct Course Artifact",
+        "url": "https://ecampus.oregonstate.edu/soc/ecatalog/course-detail.htm?subject=MRKT&crsCode=496"
+      }
+    ],
+    "catalogSnapshot": "\"Provides the student with practical experience in the collection, analysis and interpretation of primary data. Students design a complete marketing research project.\"",
+    "exact_link_found": true
+  },
+  {
     "institution": "Portland State University",
     "course": "MKTG 460",
     "modality": "In-Person / Online",

@@ -260,6 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('modalQuote').innerHTML = course.catalogSnapshot || "Official course research catalog snapshot pending formal request.";
 
         let justHTML = course.justification
+            .replace(/\[BASELINE STANDARD\]:/g, '<strong style="color:#00f0ff; text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);">[BASELINE STANDARD]:</strong>')
             .replace(/\[EXPLICIT PRACTICUM EVIDENCE\]:/g, '<strong style="color:var(--tier1)">[EXPLICIT PRACTICUM EVIDENCE]:</strong>')
             .replace(/\[PROJECT EVIDENCE\]:/g, '<strong style="color:var(--tier2)">[PROJECT EVIDENCE]:</strong>')
             .replace(/\[PRACTICUM ALIGNMENT\]:/g, '<strong style="color:var(--tier1)">[PRACTICUM ALIGNMENT]:</strong>')
