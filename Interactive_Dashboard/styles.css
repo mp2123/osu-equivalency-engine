@@ -604,3 +604,51 @@ td strong { font-size: 1.2rem; color: #fff; }
     to { opacity: 1; transform: translateY(0); }
 }
 
+/* V9.0 Mobile Responsiveness & Polish */
+@media (max-width: 768px) {
+    /* Container & Header Adjustments */
+    .container { padding: 30px 15px; }
+    h1 { font-size: 2.5rem; letter-spacing: -1px; }
+    header p { font-size: 1rem; }
+    .badge { font-size: 0.75rem; padding: 5px 12px; }
+
+    /* Analytics Grid Adjustments */
+    .analytics-grid { grid-template-columns: 1fr; gap: 20px; }
+    .chart-card { padding: 20px; }
+    .stat-number { font-size: 2.2rem; }
+    .stat-text { font-size: 1rem; }
+
+    /* Controls & Filters */
+    .controls { flex-direction: column; align-items: stretch; padding: 15px; gap: 15px; }
+    .search-wrapper, .select-styled, .csv-btn { width: 100%; min-width: 100%; }
+    #compareBtn { margin-left: 0; width: 100%; }
+
+    /* Table Adjustments */
+    th, td { padding: 15px 10px; font-size: 0.9rem; }
+    th { font-size: 0.75rem; }
+    td strong { font-size: 1rem; }
+    .view-btn { padding: 8px 12px; font-size: 0.85rem; }
+
+    /* Modal Adjustments */
+    .modal-content { width: 95%; margin: 5% auto; padding: 25px 15px; }
+    .modal-header h2 { font-size: 2rem; }
+    .close-btn { right: 15px; top: 15px; font-size: 35px; }
+    .modal-grid { grid-template-columns: 1fr; gap: 15px; }
+    .link-grid { grid-template-columns: 1fr; }
+    .primary-btn { font-size: 0.9rem; padding: 15px; }
+    
+    /* Justification Box */
+    .justification-box { margin-top: 25px; padding: 20px; border-radius: 8px; }
+    .justification-box p { font-size: 1rem; line-height: 1.6; }
+    .official-quote { font-size: 1rem; }
+
+    /* Compare Modal */
+    .comparison-card { min-width: 280px; padding: 15px; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 2rem; }
+    .match-score-container { width: 100px; }
+    .score-badge { font-size: 0.85rem; }
+}
+
