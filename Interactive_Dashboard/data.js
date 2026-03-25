@@ -224,7 +224,7 @@ window.courseData = [
         "spring2027": null,
         "summer2026": null
       },
-      "sessionNotes": "UC Berkeley Global’s official Spring 2027 entrepreneurship curriculum places BUS ADM X460.6 in the January-May program block; broader standalone extension section cadence is not publicly stable.",
+      "sessionNotes": "UC Berkeley Global’s official Spring 2027 entrepreneurship curriculum places BUS ADM X460.6 in the January-May program block, but no standalone public section listing was surfaced during this audit.",
       "accessNote": "",
       "evidenceLevel": "calendar_only"
     },
@@ -239,11 +239,7 @@ window.courseData = [
         "url": "https://berkeleyglobal.zendesk.com/hc/en-us/articles/35861752414743-Immersive-in-Entrepreneurship-Program-Curriculum-Spring-2026",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": {
-        "title": "Official Course Listing",
-        "url": "https://live-berkeley-web-services.pantheon.berkeley.edu/course-descriptions",
-        "verifiedOn": "2026-03-24"
-      }
+      "schedule": null
     }
   },
   {
@@ -411,9 +407,9 @@ window.courseData = [
         "spring2027": "2027-01-11",
         "summer2026": "2026-05-11"
       },
-      "sessionNotes": "UF publishes official semester/session calendars with Summer A/C, Summer B, Fall, and Spring start dates, but this audit did not independently pull a live MAR 4613 section rotation.",
+      "sessionNotes": "UF publishes official semester/session calendars, and the official archived Schedule of Courses provides section-level MAR 4613 evidence even though the current live search flow is interactive.",
       "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "evidenceLevel": "course_and_calendar"
     },
     "sources": {
       "course": {
@@ -426,7 +422,11 @@ window.courseData = [
         "url": "https://catalog.ufl.edu/UGRD/dates-deadlines/2026-2027/",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Archived Schedule of Courses",
+        "url": "https://archive.registrar.ufl.edu/soc/200101/marketin.spring.htm",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -2829,8 +2829,8 @@ window.courseData = [
         "url": "https://huntsman.usu.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://huntsman.usu.edu/search?q=MSLE+4534"
+        "title": "View Official Advising Sheet",
+        "url": "https://huntsman.usu.edu/advising/files/MarketingFall2022.pdf"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MSLE 4534: Offered as Survey Research rather than explicit broad 'Marketing Research'. Good focus on primary tools, but title might cause resistance.\"",
@@ -2844,14 +2844,14 @@ window.courseData = [
         "spring2027": "2027-01-11",
         "summer2026": null
       },
-      "sessionNotes": "USU publishes official semester dates, but this audit did not independently verify a public term rotation for MSLE 4534.",
-      "accessNote": "",
+      "sessionNotes": "USU publishes official semester dates, and the official Huntsman advising sheet lists MSLE 4534 Survey Research, but a direct public course-description page still was not retrievable.",
+      "accessNote": "Prerequisites are referenced in official Huntsman advising materials.",
       "evidenceLevel": "calendar_only"
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://huntsman.usu.edu/search?q=MSLE+4534",
+        "title": "Official Huntsman Advising Sheet",
+        "url": "https://huntsman.usu.edu/advising/files/MarketingFall2022.pdf",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -2859,7 +2859,11 @@ window.courseData = [
         "url": "https://www.usu.edu/calendar/academic/",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Huntsman Advising Sheet",
+        "url": "https://huntsman.usu.edu/advising/files/MarketingFall2022.pdf",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -2900,7 +2904,7 @@ window.courseData = [
         "spring2027": "2027-01-11",
         "summer2026": null
       },
-      "sessionNotes": "LSU Online publishes first- and second-module calendars inside Fall and Spring terms; the institution-level online calendar is verified, but this audit did not independently confirm a public MKT 3413 section rotation.",
+      "sessionNotes": "LSU Online publishes first- and second-module calendars inside Fall and Spring terms, but the schedule flow remained interactive and did not expose a stable public MKT 3413 section URL during this audit.",
       "accessNote": "",
       "evidenceLevel": "calendar_only"
     },
