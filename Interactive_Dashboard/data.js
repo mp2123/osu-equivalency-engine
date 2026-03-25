@@ -175,7 +175,11 @@ window.courseData = [
         "url": "https://onestop.umn.edu/calendar/financial-aid-timeline",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Public Class Search",
+        "url": "https://onestop.umn.edu/registration/register-classes/search-classes",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -358,7 +362,11 @@ window.courseData = [
         "url": "https://registrar.psu.edu/academic-calendars/2026-27.cfm",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Public Class Search",
+        "url": "https://public.lionpath.psu.edu/psp/CSPRD/EMPLOYEE/SA/c/COMMUNITY_ACCESS.CLASS_SEARCH.GBL?pslnkid=PE_S201801181044562576711220",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -477,7 +485,11 @@ window.courseData = [
         "url": "https://registrar.temple.edu/academic-calendar",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Banner Class Schedule Search",
+        "url": "https://prd-wlssb.temple.edu/prod8/bwckschd.p_disp_dyn_sched",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -536,7 +548,11 @@ window.courseData = [
         "url": "https://www.cmich.edu/offices-departments/registrars-office/calendars/academic-calendar",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Search for Classes Entry Point",
+        "url": "https://www.boisestate.edu/registrar-help/search-classes/",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -636,9 +652,9 @@ window.courseData = [
         "spring2027": "2027-01-25",
         "summer2026": null
       },
-      "sessionNotes": "The course is catalog-active and the university calendar is public, but this audit did not independently verify a recurring public section pattern for MKTG 632.",
-      "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "sessionNotes": "The official SF State class-search detail page now confirms a real section with class number, instructor, dates, meeting details, and restrictions.",
+      "accessNote": "Restricted to Marketing majors; permission number required for registration.",
+      "evidenceLevel": "course_and_calendar"
     },
     "sources": {
       "course": {
@@ -651,7 +667,11 @@ window.courseData = [
         "url": "https://academicresources.sfsu.edu/sites/default/files/documents/cal2627_DRAFT_current.policy_F21_242_CO.Revision.Start_.Date__1.pdf",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Class Search Detail",
+        "url": "https://webapps.sfsu.edu/public/classservices/classsearch/detail/2235/REG/1456",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -737,7 +757,7 @@ window.courseData = [
       },
       {
         "title": "View Direct Course Artifact",
-        "url": "https://business.uoregon.edu/search?q=mktg+390"
+        "url": "https://catalog.uoregon.edu/courses/crs-mktg/"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKTG 390: Ultimate state-system equivalent. 4-credit alignment with hands-on experience in data collection techniques.\"",
@@ -758,7 +778,7 @@ window.courseData = [
     "sources": {
       "course": {
         "title": "View Direct Course Artifact",
-        "url": "https://business.uoregon.edu/search?q=mktg+390",
+        "url": "https://catalog.uoregon.edu/courses/crs-mktg/",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -799,7 +819,7 @@ window.courseData = [
     "catalogSnapshot": "\"Official institutional structure for MKTG 460: Elite regional powerhouse. Syllabus explicitly features a hands-on class research project for practical application.\"",
     "exact_link_found": true,
     "availabilityMeta": {
-      "offeringModel": "unclear",
+      "offeringModel": "program_restricted",
       "offeredTerms": [],
       "termStartDates": {
         "fall2026": "2026-09-30",
@@ -807,9 +827,9 @@ window.courseData = [
         "spring2027": "2027-03-29",
         "summer2026": null
       },
-      "sessionNotes": "The course remains catalog-active, but this audit did not independently verify a term-by-term public rotation for MKTG 460.",
-      "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "sessionNotes": "UW's official time schedule publishes section-level meeting information for MKTG 460 and confirms the course is actively scheduled.",
+      "accessNote": "The published time schedule flags section restrictions and notes no add codes or overloads.",
+      "evidenceLevel": "course_and_calendar"
     },
     "sources": {
       "course": {
@@ -823,8 +843,8 @@ window.courseData = [
         "verifiedOn": "2026-03-24"
       },
       "schedule": {
-        "title": "View Direct Course Artifact",
-        "url": "https://myplan.uw.edu/course/#/courses/MKTG460",
+        "title": "Official Time Schedule Listing",
+        "url": "https://www.washington.edu/students/timeschd/SPR2025/mktg.html",
         "verifiedOn": "2026-03-24"
       }
     }
@@ -853,7 +873,7 @@ window.courseData = [
       },
       {
         "title": "View Direct Course Artifact",
-        "url": "https://courses.osu.edu/"
+        "url": "https://data-analytics.osu.edu/courses/busml/4202"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for BUSML 4202: 'Students work in groups to conduct a marketing research project... designing questionnaires.'\"",
@@ -867,14 +887,14 @@ window.courseData = [
         "spring2027": "2027-01-11",
         "summer2026": null
       },
-      "sessionNotes": "Ohio State publishes semester dates, but this audit did not independently verify a term-by-term public rotation for BUSML 4202.",
-      "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "sessionNotes": "Ohio State's official course page plus an official posted syllabus PDF now provide public course and section evidence for BUSML 4202.",
+      "accessNote": "Prerequisites apply; the course is also not open to students with credit for 758.",
+      "evidenceLevel": "course_and_calendar"
     },
     "sources": {
       "course": {
         "title": "View Direct Course Artifact",
-        "url": "https://courses.osu.edu/",
+        "url": "https://data-analytics.osu.edu/courses/busml/4202",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -883,8 +903,8 @@ window.courseData = [
         "verifiedOn": "2026-03-24"
       },
       "schedule": {
-        "title": "View Direct Course Artifact",
-        "url": "https://courses.osu.edu/",
+        "title": "Official Posted Syllabus PDF",
+        "url": "https://files.fisher.osu.edu/public/syllabi/BUSML4202%20Li.pdf?ccQ6ETJkYHq3nLo3dEzjrApnkS3pGspF=",
         "verifiedOn": "2026-03-24"
       }
     }
@@ -1527,7 +1547,7 @@ window.courseData = [
       },
       {
         "title": "View Direct Course Artifact",
-        "url": "https://mays.tamu.edu/department-of-marketing/"
+        "url": "https://catalog.tamu.edu/undergraduate/course-descriptions/mktg/"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKTG 323: Heavy statistical reliance and empirical data collection standards. Aggie pedigree makes it a very safe bet.\"",
@@ -1548,7 +1568,7 @@ window.courseData = [
     "sources": {
       "course": {
         "title": "View Direct Course Artifact",
-        "url": "https://mays.tamu.edu/department-of-marketing/",
+        "url": "https://catalog.tamu.edu/undergraduate/course-descriptions/mktg/",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -2512,7 +2532,7 @@ window.courseData = [
       },
       {
         "title": "View Direct Course Artifact",
-        "url": "https://extension.ucr.edu/course/721903/MarketResearch"
+        "url": "https://portal.ucx.ucr.edu/search/publicCourseSearchDetails.do?courseId=721903&method=load&selectedProgramAreaId=41459&selectedProgramStreamId=41492"
       },
       {
         "title": "View Official Program Dates",
@@ -2537,7 +2557,7 @@ window.courseData = [
     "sources": {
       "course": {
         "title": "View Direct Course Artifact",
-        "url": "https://extension.ucr.edu/course/721903/MarketResearch",
+        "url": "https://portal.ucx.ucr.edu/search/publicCourseSearchDetails.do?courseId=721903&method=load&selectedProgramAreaId=41459&selectedProgramStreamId=41492",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -3551,7 +3571,9 @@ const restrictedInstitutions = new Set([
   'Indiana U. (Kelley)',
   'Arkansas State',
   'Univ. of Alabama',
-  'Michigan State'
+  'Michigan State',
+  'SF State Online',
+  'University of Washington'
 ]);
 
 const graduateOnlyInstitutions = new Set([

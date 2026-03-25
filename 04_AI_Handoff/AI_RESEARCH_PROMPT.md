@@ -4,9 +4,10 @@ Use this prompt with the handoff CSV files in this folder.
 
 Current package state:
 
-* `OSU_MRKT496_AI_Research_Queue.csv`: `42` unresolved rows
+* `OSU_MRKT496_AI_Research_Queue.csv`: `41` unresolved rows
 * `OSU_MRKT496_Missing_Direct_Course_Links.csv`: `3` rows
-* `OSU_MRKT496_Verified_Link_Polish_Queue.csv`: `8` optional polish rows
+* `OSU_MRKT496_Verified_Link_Polish_Queue.csv`: `4` optional polish rows
+* full dataset verification mix: `19` `Fully Verified`, `25` `Calendar Only`, `11` `Restricted Access`, `4` `Cohort Timing`, `1` `Graduate Only`
 
 ## Prompt
 
@@ -27,6 +28,14 @@ Your job:
 5. If the row is marked `Restricted Access`, preserve that unless official evidence clearly disproves it.
 6. If the row is marked `Cohort Timing`, do not convert it into a normal semester rotation without explicit proof.
 7. If the row is marked `Graduate Only`, do not treat it as a clean undergraduate analogue unless official evidence supports that claim.
+8. If the public class-search or schedule tool requires login, portal access, or an interactive flow that does not expose a stable course-specific URL, say that clearly and treat the row as not further improvable from public sources.
+
+Priority order:
+
+1. Resolve the `3` missing direct course-description links first.
+2. Then target the highest-value `Calendar Only` rows that could still gain official schedule proof.
+3. Then improve `Restricted Access` rows only if you can confirm or narrow the actual enrollment restriction from an official source.
+4. Leave `Cohort Timing` and `Graduate Only` rows conservative unless the source clearly supports a stronger claim.
 
 Return results in a structured table with these columns:
 

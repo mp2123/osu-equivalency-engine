@@ -6,9 +6,10 @@ Use this folder instead of guessing from the dashboard code or browsing the full
 
 Current handoff state after the latest source-ingestion pass:
 
-* `42` rows remain operationally unresolved and still need research
+* `41` rows remain operationally unresolved and still need research
 * `3` rows still lack an exact direct course-description link
-* `8` rows are already `Fully Verified` but could still be polished with a cleaner schedule/class-search source
+* `4` rows are already `Fully Verified` but could still be polished with a cleaner schedule/class-search source
+* current verification mix across the full dataset is `19` `Fully Verified`, `25` `Calendar Only`, `11` `Restricted Access`, `4` `Cohort Timing`, and `1` `Graduate Only`
 
 ## Files
 
@@ -37,6 +38,32 @@ This is the best file to use if the follow-on AI should focus only on better cou
 Optional polish list for rows that are already `Fully Verified` but still do not have the cleanest possible public schedule/class-search source stored in the repo.
 
 This file is not the main priority. Use it only after the unresolved queue is exhausted.
+
+## Best Next Targets
+
+Use the remaining work in this order:
+
+1. Exact direct course-description links for the `3` remaining gaps:
+   * `Utah State University`
+   * `LSU Online`
+   * `UC San Diego Ext`
+2. High-value `Calendar Only` schedule-proof rows:
+   * `UF Online (Univ. of Florida)`
+   * `University of Oregon`
+   * `WSU Global`
+   * `Purdue University`
+   * `San Diego State (SDSU)`
+   * `UT Austin`
+   * `Capella University`
+   * `Texas A&M`
+3. Restriction confirmation rows where schedule proof exists or the restriction is likely the real blocker:
+   * `SF State Online`
+   * `University of Washington`
+   * `FIU Online`
+   * `University of Utah`
+   * `Michigan State`
+
+If a school's public schedule or class-search tool is portal-gated, say so explicitly and stop instead of guessing.
 
 ## How To Use With Another AI
 

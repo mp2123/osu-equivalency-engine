@@ -8,9 +8,9 @@ This file is now the implementation record for the V12.0 precision sweep. The pl
 * **Verification layer added:** Every row now carries `verificationMeta`, and the dashboard surfaces verification badges, a verification-state filter, modal next-step guidance, and compare-card verification routing.
 * **Radar fixed:** The 0-100 radial scale remains pinned correctly, so the OSU benchmark fills the chart as intended.
 * **Placeholder strings removed:** Legacy strings such as `Late Aug`, `Early Jan`, and free-floating `Unclear` were removed from the data payload.
-* **Evidence strengthened:** The current evidence mix is `24` `course_and_calendar`, `24` `calendar_only`, `11` `catalog_only`, and `1` `unclear`.
+* **Evidence strengthened:** The current evidence mix is `27` `course_and_calendar`, `21` `calendar_only`, `11` `catalog_only`, and `1` `unclear`.
 * **Calendar source coverage:** All 60 rows now carry a non-null official or program-level calendar source in the dataset.
-* **Verification mix:** The current section-proof mix is `18` `verified`, `28` `not_public`, `4` `cohort`, `9` `restricted`, and `1` `graduate_only`.
+* **Verification mix:** The current section-proof mix is `19` `verified`, `25` `not_public`, `4` `cohort`, `11` `restricted`, and `1` `graduate_only`.
 
 ## Resolved Findings
 1. **OSU MRKT 496 benchmark:** Kept at `matchScore = 100` with a full `[100, 100, 100, 100, 100]` radar vector. The offering model is now stored as a Spring-focused term pattern with explicit calendar dates and the note that no public Fall Ecampus section was located during this audit.
@@ -25,6 +25,10 @@ This file is now the implementation record for the V12.0 precision sweep. The pl
 10. **FIU Online:** Reclassified from generic calendar-only handling to `restricted` because the official FIU course catalog makes access limits explicit for `MAR 4613`, even though a live public section rotation still was not captured.
 11. **University of Georgia:** Promoted from generic calendar-only handling to `fully verified` because the official UGA Bulletin course detail for `MARK 4000` explicitly states `Semester Course Offered: Offered every year`.
 12. **Evidence-first scoring:** Rows only moved when the new audit introduced a real access or cadence-confidence risk. Program-restricted rows and calendar-only rows were tightened conservatively, and the fifth radar axis stays aligned with `matchScore`.
+13. **Latest source-ingestion pass:** The repo now carries stronger official source coverage for Ohio State, SF State Online, University of Washington, Temple, University of Minnesota, Boise State, Texas A&M, University of Oregon, and UC Riverside Extension, plus upgraded direct course sources for several previously weaker rows.
+14. **Ohio State University:** Promoted to exact public course-and-calendar proof for `BUSML 4202` using the official course page plus an official posted syllabus PDF that includes section-level meeting evidence.
+15. **SF State Online and University of Washington:** Both now carry exact public schedule/detail sources, but both remain conservatively classified as `restricted` because the published schedule pages explicitly flag access or registration limitations.
+16. **Latest counts after handoff refresh:** The current unresolved research queue is `41` rows, the remaining missing direct course-description queue is `3` rows, and the optional verified-link polish queue is `4` rows.
 
 ## Dataset Contract
 Each row in `Interactive_Dashboard/data.js` now carries:
@@ -72,3 +76,5 @@ The repo no longer has structural blockers for availability/date handling. Any f
 * improving evidence quality for rows still marked `calendar_only`, `catalog_only`, or `unclear`
 * pulling more live section/schedule proof so additional rows can graduate from institution-level calendar evidence to true course-and-calendar evidence
 * revisiting a small number of extension/program rows where program timing is official but standalone section cadence remains conservative
+* filling the final `3` direct course-link gaps: `Utah State University`, `LSU Online`, and `UC San Diego Ext`
+* confirming whether the remaining public schedule tools that appear portal-gated are truly not usable without authentication
