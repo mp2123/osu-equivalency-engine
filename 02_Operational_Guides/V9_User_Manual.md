@@ -11,7 +11,7 @@ The repository has been streamlined to separate legacy data from the active V12.
 *   **`/Interactive_Dashboard/` (The Core Engine):** This is the crown jewel. It contains the standalone web application (`index.html`, `app.js`, `styles.css`, `data.js`). The active dataset now uses structured `availabilityMeta` and `sources` fields, with the UI deriving the displayed availability strings from those records.
 *   **`README.md`:** The architectural map. It provides a high-level overview of the project's scope, capabilities, and the 60 validated universities.
 *   **`/01_Equivalency_Reports/`:** This directory contains the older, static markdown reports (V1 through V7). They have been preserved for historical context but now contain warnings redirecting users to the Interactive Dashboard, as the static reports only list ~20 schools, whereas the dashboard contains all 60.
-*   **`/02_Operational_Guides/`:** Where this manual resides, providing instruction on deployment and academic petitioning.
+*   **`/02_Operational_Guides/`:** Where this manual resides. It now also includes `V12_Dashboard_Glossary.md`, which is the plain-English definition sheet for the website's labels, evidence states, verification badges, radar axes, and export fields.
 *   **`/03_Raw_Data/`:** A sandbox directory used during the initial extraction phases. It can be ignored by the end user.
 
 ---
@@ -31,8 +31,17 @@ You do not need to install any servers, Node.js, or backend frameworks. The engi
 *   **Deep Syllabus Analysis:** Click the **"View Syllabus Analysis"** button on any row. This opens a detailed modal showing:
     *   Exactly *why* the course matches MRKT 496.
     *   A split between the **course offering pattern** and the **academic calendar dates**, so term cadence is no longer confused with institutional term start dates.
+    *   A split between **verification status** and **next verification step**, so you can see whether the row is fully proven, still conservative, restricted, cohort-driven, or graduate-only.
     *   The estimated tuition cost (per credit, per course, or per year).
     *   **Direct Course Artifact** and **Academic Calendar** links that bypass university navigation and preserve the audit trail for each row.
+
+### Key V12 Terms You Will See
+*   **`Calendar Only`:** The course exists and the school calendar is verified, but the exact recurring public section rotation is not fully published.
+*   **`Cohort Timing`:** The timing is driven by a program or cohort start window rather than a normal standalone semester rotation.
+*   **`Restricted Access`:** The course may be academically strong, but access is gated by major, class standing, nondegree status, or approval.
+*   **`Fully Verified`:** The exact course code is tied to official public course or schedule proof plus calendar support.
+
+For the complete website field guide, open **`/02_Operational_Guides/V12_Dashboard_Glossary.md`**.
 
 ---
 
