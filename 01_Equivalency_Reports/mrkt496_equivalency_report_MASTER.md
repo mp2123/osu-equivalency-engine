@@ -1,6 +1,6 @@
 # MRKT 496 Transfer Equivalency Research Report
 
-> **System Update (V9.0 Deep Intelligence):** This static report has been superseded by the `Interactive_Dashboard`. The V9.0 Engine now tracks 59 verified universities (up from the original 20+ listed below), complete with real-time tuition approximations, direct catalog deep-links, and an automated petition generator. Please refer to the HTML dashboard for the most current, actionable data.
+> **System Update (V9.0 Deep Intelligence):** This static report has been superseded by the `Interactive_Dashboard`. The V9.0 Engine now tracks 60 verified universities (up from the original 20+ listed below), complete with real-time tuition approximations, direct catalog deep-links, and an automated petition generator. Please refer to the HTML dashboard for the most current, actionable data.
 
 ## 1. Executive Summary
 After an extensive review targeting Oregon State University’s MRKT 496 (Marketing Research Practicum), I have identified several strong, actionable alternatives that can be completed prior to OSU's Spring 2027 term. Because MRKT 496 demands a hands-on primary data collection practicum rather than just theoretical research, my search prioritized upper-division courses at AACSB-accredited institutions with explicit project-based components. 

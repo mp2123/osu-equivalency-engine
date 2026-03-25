@@ -3,25 +3,27 @@
 
 ---
 
-## 🚀 The Equivalency Analytics Engine (V9.0 Deep Intelligence)
+## 🚀 The Equivalency Analytics Engine (V12.0 Precision Sweep)
 
-The static markdown matrix has been deprecated in favor of a lightning-fast, standalone **Interactive Web Application** built entirely in Vanilla HTML/CSS/JS. 
+The static markdown matrix has been deprecated in favor of a standalone **Interactive Web Application** built entirely in Vanilla HTML/CSS/JS.
 
-We have successfully reverse-engineered OSU's practicum requirements and identified **59 AACSB/ACBSP-Accredited Universities** that explicitly mandate primary data collection projects, rendering them theoretically equivalent to MRKT 496.
+We have successfully reverse-engineered OSU's practicum requirements and identified **60 AACSB/ACBSP-accredited universities** that explicitly mandate primary data collection projects, rendering them theoretically equivalent to MRKT 496.
 
 ### How to Access the Data
 Do NOT run a server. You do not need Node.js or React. 
 1. Navigate to the `/Interactive_Dashboard/` folder in this repository.
 2. Double-click `index.html` to open it natively in Chrome or Safari.
 
-**V9.0 Capabilities Included:**
+**V12.0 Capabilities Included:**
 - 📊 **Embedded Analytics:** Chart.js integration visualizes the tier distribution and accreditation matrix.
 - 🎯 **OSU Match Scoring:** The algorithm assesses how perfectly the target syllabus maps the "practicum" requirement using a gradient progress bar.
+- 🗓️ **Availability Intelligence:** Every row now uses structured `availabilityMeta` data so course offering pattern and academic calendar dates are displayed separately instead of as one mixed string.
+- 🔎 **Source Traceability:** Each school now carries source-backed course/calendar metadata, and the modal exposes an academic calendar link when that evidence exists.
 - ⚖️ **Candidate Comparison:** Select and compare up to 3 universities side-by-side with syllabus alignment radar charts.
 - ✍️ **Petition Generator:** Instant generation of formal OSU transfer credit waiver rationale for any candidate.
 - 💰 **Tuition Analysis:** Real-time visibility into per-course/per-credit tuition estimates for top-tier candidates.
 - 🔗 **Deep-Link Artifacts:** Direct routing to official course catalogs and archived syllabi to bypass university paywalls.
-- 💾 **CSV Exporting:** Instantly download the 59-university database as a spreadsheet.
+- 💾 **CSV Exporting:** Instantly download the 60-university database as a spreadsheet with offering model, start-date, and source URL columns.
 - ⚡ **Zero-Friction Search & Sort:** Instant filtering and column-based sorting to find the perfect match.
 
 ---
@@ -30,7 +32,7 @@ Do NOT run a server. You do not need Node.js or React.
 
 | Directory / File | Description |
 | :--- | :--- |
-| 📁 `Interactive_Dashboard/` | **[CRITICAL]** The core web-application containing the 59-school JSON payload, the glassmorphic CSS, JS filtering, comparison logic, and CSV export logic. |
+| 📁 `Interactive_Dashboard/` | **[CRITICAL]** The core web application containing the 60-school dataset, normalized availability/source metadata, the glassmorphic CSS, JS filtering, comparison logic, and CSV export logic. |
 | 📁 `01_Equivalency_Reports/` | Formal markdown petition documents. Includes the exact rhetorical frameworks and logic required to present to the OSU R1 Faculty review desk. |
 | 📁 `03_Raw_Data/` | Sandbox directory for staging unvetted university leads or downloading PDF syllabus documents. |
 | 📄 `README.md` | This architectural map. |
@@ -40,8 +42,8 @@ Do NOT run a server. You do not need Node.js or React.
 ## 📌 Phase Overview
 **Project Status: ACTIVE ENHANCEMENT** (35+ distinct phases executed).
 - Transitioned from flawed Playwright scraping to invisible API extraction.
-- Scaled from 11 targets → 28 targets → 36 targets → 46 → **59 Target Universities**.
+- Scaled from 11 targets → 28 targets → 36 targets → 46 → **60 Target Universities**.
 - Engineered the V8.0 UI with side-by-side comparison and an integrated petition generator.
-- Upgraded to V9.0 Deep Intelligence with verified catalog deep-links and tuition cost approximations for top-tier candidates.
+- Upgraded to V12.0 Precision Sweep with normalized availability metadata, source traceability, and evidence-first score tightening where access or term confidence dropped.
 
 *Built by Antigravity*

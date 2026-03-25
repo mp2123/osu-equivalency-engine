@@ -152,6 +152,20 @@ header p {
     padding: 30px 40px;
 }
 
+.verification-matrix .stat-row {
+    padding: 10px 0;
+}
+
+.verification-matrix .stat-number {
+    font-size: 2.2rem;
+    min-width: 48px;
+}
+
+#graduateOnlyCount {
+    color: #fda4af;
+    text-shadow: 0 0 15px rgba(251, 113, 133, 0.25);
+}
+
 .stat-row {
     display: flex;
     align-items: center;
@@ -294,6 +308,57 @@ th {
 tr { transition: background 0.2s; }
 tr:hover { background: rgba(255, 255, 255, 0.08); }
 td strong { font-size: 1.2rem; color: #fff; }
+.availability-summary {
+    display: block;
+    max-width: 240px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+
+.verification-pill {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    white-space: nowrap;
+}
+
+.verification-verified {
+    color: #dcfce7;
+    background: rgba(16, 185, 129, 0.18);
+    border-color: rgba(16, 185, 129, 0.45);
+}
+
+.verification-calendar {
+    color: #cffafe;
+    background: rgba(0, 240, 255, 0.12);
+    border-color: rgba(0, 240, 255, 0.3);
+}
+
+.verification-restricted {
+    color: #fef3c7;
+    background: rgba(245, 158, 11, 0.14);
+    border-color: rgba(245, 158, 11, 0.35);
+}
+
+.verification-cohort {
+    color: #dbeafe;
+    background: rgba(59, 130, 246, 0.14);
+    border-color: rgba(59, 130, 246, 0.35);
+}
+
+.verification-graduate {
+    color: #fecaca;
+    background: rgba(239, 68, 68, 0.14);
+    border-color: rgba(239, 68, 68, 0.35);
+}
 
 /* Match Score Bar */
 .match-score-container { width: 130px; }
@@ -467,6 +532,12 @@ td strong { font-size: 1.2rem; color: #fff; }
     font-size: 1.5rem;
     font-weight: 700;
     margin: 10px 0 0 0;
+}
+.detail-text {
+    font-size: 1rem;
+    line-height: 1.55;
+    font-weight: 600;
+    overflow-wrap: anywhere;
 }
 .neon-blue-text { color: var(--secondary); text-shadow: 0 0 12px rgba(0, 240, 255, 0.25); }
 
@@ -651,4 +722,3 @@ td strong { font-size: 1.2rem; color: #fff; }
     .match-score-container { width: 100px; }
     .score-badge { font-size: 0.85rem; }
 }
-

@@ -1,16 +1,16 @@
-# V9.0 Equivalency Analytics Engine: Operational User Manual
+# V12.0 Equivalency Analytics Engine: Operational User Manual
 
-This comprehensive guide covers how to navigate the repository, utilize the V9.0 Interactive Dashboard, and successfully present this intelligence to the Oregon State University academic review desk to secure your MRKT 496 transfer credit waiver.
+This comprehensive guide covers how to navigate the repository, utilize the V12.0 Interactive Dashboard, and successfully present this intelligence to the Oregon State University academic review desk to secure your MRKT 496 transfer credit waiver.
 
 ---
 
 ## 🗂️ 1. Repository Navigation (Where Everything Is)
 
-The repository has been streamlined to separate legacy data from the active V9.0 engine. 
+The repository has been streamlined to separate legacy data from the active V12.0 engine.
 
-*   **`/Interactive_Dashboard/` (The Core Engine):** This is the crown jewel. It contains the standalone web application (`index.html`, `app.js`, `styles.css`, `data.js`). This is where you will spend 99% of your time.
-*   **`README.md`:** The architectural map. It provides a high-level overview of the project's scope, capabilities, and the 59 validated universities.
-*   **`/01_Equivalency_Reports/`:** This directory contains the older, static markdown reports (V1 through V7). They have been preserved for historical context but now contain warnings redirecting users to the Interactive Dashboard, as the static reports only list ~20 schools, whereas the dashboard contains all 59.
+*   **`/Interactive_Dashboard/` (The Core Engine):** This is the crown jewel. It contains the standalone web application (`index.html`, `app.js`, `styles.css`, `data.js`). The active dataset now uses structured `availabilityMeta` and `sources` fields, with the UI deriving the displayed availability strings from those records.
+*   **`README.md`:** The architectural map. It provides a high-level overview of the project's scope, capabilities, and the 60 validated universities.
+*   **`/01_Equivalency_Reports/`:** This directory contains the older, static markdown reports (V1 through V7). They have been preserved for historical context but now contain warnings redirecting users to the Interactive Dashboard, as the static reports only list ~20 schools, whereas the dashboard contains all 60.
 *   **`/02_Operational_Guides/`:** Where this manual resides, providing instruction on deployment and academic petitioning.
 *   **`/03_Raw_Data/`:** A sandbox directory used during the initial extraction phases. It can be ignored by the end user.
 
@@ -25,13 +25,14 @@ You do not need to install any servers, Node.js, or backend frameworks. The engi
 2. Double-click **`index.html`**. It will open natively in Google Chrome, Apple Safari, or Microsoft Edge.
 
 ### How to Use the Tools:
-*   **Search & Filter:** Use the top navigation bar to instantly filter the 59 schools by modality ("Online" vs "In-Person"), or filter by "Tier 1: High Conviction" to only see the absolute best structural matches for OSU's practicum requirement.
+*   **Search & Filter:** Use the top navigation bar to instantly filter the 60 schools by modality ("Online" vs "In-Person"), or filter by "Tier 1: High Conviction" to only see the absolute best structural matches for OSU's practicum requirement.
 *   **Smart Sorting:** Click any of the table headers (Ranking, Institution, Code, OSU Match) to sort the data matrix ascending or descending.
 *   **Side-by-Side Comparison:** Check the boxes in the far-right "Compare" column for up to 3 schools (e.g., UC Berkeley, Penn State, WSU Global). Click the orange **"⚖ Compare Selected"** button that appears. This opens a dedicated war-room view comparing their radar charts, estimated tuition, and OSU fit justifications side-by-side.
 *   **Deep Syllabus Analysis:** Click the **"View Syllabus Analysis"** button on any row. This opens a detailed modal showing:
     *   Exactly *why* the course matches MRKT 496.
+    *   A split between the **course offering pattern** and the **academic calendar dates**, so term cadence is no longer confused with institutional term start dates.
     *   The estimated tuition cost (per credit, per course, or per year).
-    *   **Direct Course Artifact** links that bypass university firewalls, routing you straight to the course catalog or archived PDF syllabus.
+    *   **Direct Course Artifact** and **Academic Calendar** links that bypass university navigation and preserve the audit trail for each row.
 
 ---
 
@@ -43,8 +44,8 @@ Because the Interactive Dashboard is a local file living on your computer's hard
 You built a CSV export tool specifically for professional communication.
 1. Open the Dashboard (`index.html`).
 2. Click the **"⬇ Export to CSV"** button.
-3. This generates a clean, professional spreadsheet (`OSU_MRKT496_Equivalency_Report_V9.csv`) containing all 59 schools, their match scores, exact catalog quotes, tuition estimates, and deep URLs.
-4. **Action:** Email your academic advisor and say, *"I have compiled a data matrix of 59 AACSB-accredited alternatives for MRKT 496. I have attached the CSV database for your review, and I would like to formally petition for [Target School Name]."*
+3. This generates a clean, professional spreadsheet (`OSU_MRKT496_Equivalency_Report_V12.csv`) containing all 60 schools, their match scores, exact catalog quotes, tuition estimates, offering model metadata, and source URLs.
+4. **Action:** Email your academic advisor and say, *"I have compiled a data matrix of 60 AACSB-accredited alternatives for MRKT 496. I have attached the CSV database for your review, and I would like to formally petition for [Target School Name]."*
 
 ### Option B: Hosting the Website Live on Vercel (The "Shock and Awe" Route)
 If you want to send the advisor a living, clickable URL so they can interact with the dashboard and radar charts themselves, you can easily host this on your existing Vercel account. Because this is a vanilla HTML/CSS/JS application, it requires no complex build steps.

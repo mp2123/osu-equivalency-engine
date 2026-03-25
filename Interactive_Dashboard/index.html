@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OSU Equivalency Engine | V9.0 Deep Intelligence</title>
+    <title>OSU Equivalency Engine | V12.0 Precision Sweep</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1324'/%3E%3Cpath d='M15 46V18h9l8 16 8-16h9v28h-7V30l-7 14h-6l-7-14v16z' fill='%23f97316'/%3E%3C/svg%3E">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="styles.css">
@@ -13,9 +14,9 @@
     
     <div class="container">
         <header>
-            <div class="badge">V9.0 Deep Intelligence Engine</div>
+            <div class="badge">V12.0 Precision Sweep</div>
             <h1>Target Resolution: <span class="highlight">MRKT 496</span></h1>
-            <p>Interactive Data Matrix with Radar Analytics, Exact Syllabus Extraction, & Intelligent Routing</p>
+            <p>Interactive data matrix with radar analytics, source-backed availability intelligence, and petition-ready verification routing.</p>
         </header>
 
         <!-- Analytics Dashboard Charts -->
@@ -35,16 +36,39 @@
             <div class="chart-card glass-panel gradient-border key-stats">
                 <h3>System Telemetry</h3>
                 <div class="stat-row">
-                    <span class="stat-number neon-green" id="totalCount">59</span>
+                    <span class="stat-number neon-green" id="totalCount">60</span>
                     <span class="stat-text">Total Validated Equivalencies</span>
                 </div>
                 <div class="stat-row">
-                    <span class="stat-number neon-orange" id="onlineCount">41</span>
+                    <span class="stat-number neon-orange" id="onlineCount">38</span>
                     <span class="stat-text">Online/Hybrid Potential</span>
                 </div>
                 <div class="stat-row">
                     <span class="stat-number neon-blue" id="tier1Count">24</span>
                     <span class="stat-text">AACSB Tier-1 Elites</span>
+                </div>
+            </div>
+            <div class="chart-card glass-panel gradient-border key-stats verification-matrix">
+                <h3>Verification Matrix</h3>
+                <div class="stat-row">
+                    <span class="stat-number neon-green" id="verifiedCount">11</span>
+                    <span class="stat-text">Fully Verified</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-number neon-blue" id="calendarOnlyCount">40</span>
+                    <span class="stat-text">Calendar Only</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-number neon-blue" id="cohortCount">4</span>
+                    <span class="stat-text">Cohort Timing</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-number neon-orange" id="restrictedCount">4</span>
+                    <span class="stat-text">Restricted Access</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-number" id="graduateOnlyCount">1</span>
+                    <span class="stat-text">Graduate Only</span>
                 </div>
             </div>
         </div>
@@ -66,9 +90,20 @@
                 <option value="Online">Online Formats</option>
                 <option value="In-Person">In-Person Formats</option>
             </select>
+            <select id="verificationFilter" class="glass-input select-styled">
+                <option value="all">All Verification States</option>
+                <option value="verified">Fully Verified</option>
+                <option value="not_public">Calendar Only</option>
+                <option value="restricted">Restricted</option>
+                <option value="cohort">Cohort</option>
+                <option value="graduate_only">Graduate Only</option>
+            </select>
             
             <button id="exportCsvBtn" class="action-btn csv-btn">
                 <span>⬇ Export to CSV</span>
+            </button>
+            <button id="actionQueueBtn" class="action-btn csv-btn">
+                <span>⬇ Export Action Queue</span>
             </button>
             <button id="compareBtn" class="action-btn primary-btn" style="display: none; margin-left: 10px; background: var(--tier1);">
                 <span>⚖ Compare Selected (<span id="compareCount">0</span>)</span>
@@ -84,6 +119,7 @@
                         <th id="sort-inst" style="cursor:pointer">Institution ↕</th>
                         <th id="sort-code" style="cursor:pointer">Code ↕</th>
                         <th>Format</th>
+                        <th id="sort-verification" style="cursor:pointer">Offering Snapshot ↕</th>
                         <th id="sort-score" style="cursor:pointer">OSU Match ↕</th>
                         <th>Credits</th>
                         <th>Options</th>
@@ -117,8 +153,20 @@
                             <p id="modalCourse" class="bold-text"></p>
                         </div>
                         <div class="modal-stat card-fx">
-                            <small>Term Availability</small>
-                            <p id="modalAvail" class="bold-text neon-blue-text"></p>
+                            <small>Course Offering Pattern</small>
+                            <p id="modalOfferingPattern" class="bold-text detail-text neon-blue-text"></p>
+                        </div>
+                        <div class="modal-stat card-fx">
+                            <small>Academic Calendar Dates</small>
+                            <p id="modalCalendarDates" class="bold-text detail-text"></p>
+                        </div>
+                        <div class="modal-stat card-fx">
+                            <small>Verification Status</small>
+                            <p id="modalVerificationStatus" class="bold-text detail-text"></p>
+                        </div>
+                        <div class="modal-stat card-fx">
+                            <small>Next Verification Step</small>
+                            <p id="modalNextVerificationStep" class="bold-text detail-text"></p>
                         </div>
                         <div class="modal-stat card-fx">
                             <small>Estimated Tuition</small>
