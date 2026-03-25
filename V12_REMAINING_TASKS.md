@@ -8,9 +8,9 @@ This file is now the implementation record for the V12.0 precision sweep. The pl
 * **Verification layer added:** Every row now carries `verificationMeta`, and the dashboard surfaces verification badges, a verification-state filter, modal next-step guidance, and compare-card verification routing.
 * **Radar fixed:** The 0-100 radial scale remains pinned correctly, so the OSU benchmark fills the chart as intended.
 * **Placeholder strings removed:** Legacy strings such as `Late Aug`, `Early Jan`, and free-floating `Unclear` were removed from the data payload.
-* **Evidence strengthened:** The current evidence mix is `21` `course_and_calendar`, `30` `calendar_only`, `7` `catalog_only`, and `2` `unclear`.
+* **Evidence strengthened:** The current evidence mix is `24` `course_and_calendar`, `24` `calendar_only`, `11` `catalog_only`, and `1` `unclear`.
 * **Calendar source coverage:** All 60 rows now carry a non-null official or program-level calendar source in the dataset.
-* **Verification mix:** The current section-proof mix is `17` `verified`, `30` `not_public`, `4` `cohort`, `8` `restricted`, and `1` `graduate_only`.
+* **Verification mix:** The current section-proof mix is `18` `verified`, `28` `not_public`, `4` `cohort`, `9` `restricted`, and `1` `graduate_only`.
 
 ## Resolved Findings
 1. **OSU MRKT 496 benchmark:** Kept at `matchScore = 100` with a full `[100, 100, 100, 100, 100]` radar vector. The offering model is now stored as a Spring-focused term pattern with explicit calendar dates and the note that no public Fall Ecampus section was located during this audit.

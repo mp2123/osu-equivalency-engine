@@ -23,7 +23,7 @@ window.courseData = [
       },
       {
         "title": "View Direct Course Artifact",
-        "url": "https://ecampus.oregonstate.edu/soc/ecatalog/ecoursedetail.htm?subject=MRKT&coursenumber=496&termcode=ALL"
+        "url": "https://catalog.oregonstate.edu/courses/mrkt/"
       }
     ],
     "catalogSnapshot": "\"Provides the student with practical experience in the collection, analysis and interpretation of primary data. Students design a complete marketing research project.\"",
@@ -45,8 +45,8 @@ window.courseData = [
     },
     "sources": {
       "course": {
-        "title": "View Direct Course Artifact",
-        "url": "https://ecampus.oregonstate.edu/soc/ecatalog/ecoursedetail.htm?subject=MRKT&coursenumber=496&termcode=ALL",
+        "title": "Official Course Catalog",
+        "url": "https://catalog.oregonstate.edu/courses/mrkt/",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -54,7 +54,11 @@ window.courseData = [
         "url": "https://registrar.oregonstate.edu/osus-4-year-calendar",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Class Search Query",
+        "url": "https://classes.oregonstate.edu/#/search?query=MRKT%20496",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -499,12 +503,12 @@ window.courseData = [
         "url": "https://cmich.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://cmich.edu/search?q=MKT+450"
+        "title": "View Direct Course Artifact",
+        "url": "https://cmich.smartcatalogiq.com/en/2025-2026/undergraduate-bulletin/courses/mkt-marketing/400/mkt-450/"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKT 450: Requires 'gathering, recording, and analyzing raw marketing data'. The focus on 'raw' raw collection is the exact phrasing Oregon State evaluators look for in waivers.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "term",
       "offeredTerms": [
@@ -523,8 +527,8 @@ window.courseData = [
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://cmich.edu/search?q=MKT+450",
+        "title": "View Direct Course Artifact",
+        "url": "https://cmich.smartcatalogiq.com/en/2025-2026/undergraduate-bulletin/courses/mkt-marketing/400/mkt-450/",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -558,12 +562,12 @@ window.courseData = [
         "url": "https://wpcarey.asu.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://wpcarey.asu.edu/search?q=MKT+352"
+        "title": "View Direct Course Artifact",
+        "url": "https://asulocal.asu.edu/degrees/ugba-bamktbs/"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKT 352: A highly reputable local Phoenix option. Primary sampling and quantitative gathering are central to their learning objectives. Extreme ease-of-transfer for regional institutions.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "term",
       "offeredTerms": [
@@ -582,8 +586,8 @@ window.courseData = [
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://wpcarey.asu.edu/search?q=MKT+352",
+        "title": "View Direct Course Artifact",
+        "url": "https://asulocal.asu.edu/degrees/ugba-bamktbs/",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -1914,12 +1918,12 @@ window.courseData = [
         "url": "https://business.fau.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://business.fau.edu/search?q=MAR+4613"
+        "title": "View Direct Course Artifact",
+        "url": "https://www.fau.edu/registrar/university-catalog/24-25catalog/businessdes/"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MAR 4613: Extremely rigorous defining of core marketing problems and massive data gathering protocols.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "term",
       "offeredTerms": [
@@ -1938,8 +1942,8 @@ window.courseData = [
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://business.fau.edu/search?q=MAR+4613",
+        "title": "View Direct Course Artifact",
+        "url": "https://www.fau.edu/registrar/university-catalog/24-25catalog/businessdes/",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -1947,7 +1951,11 @@ window.courseData = [
         "url": "https://www.fau.edu/registrar/calendar/test/index.php",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Section PDF",
+        "url": "https://www.fau.edu/uupc/documents/materials/2024/april-29-2024/mar-4613.pdf",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -2321,14 +2329,14 @@ window.courseData = [
         "url": "https://nau.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://nau.edu/search?q=MKT+439"
+        "title": "View Direct Course Artifact",
+        "url": "https://catalog.nau.edu/Courses/course?catalogYear=2526&courseId=005512"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKT 439: Drivable option to Flagstaff core BBA requirement for state. Extremely safe.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
-      "offeringModel": "unclear",
+      "offeringModel": "term",
       "offeredTerms": [],
       "termStartDates": {
         "fall2026": "2026-08-24",
@@ -2336,14 +2344,14 @@ window.courseData = [
         "spring2027": "2027-01-11",
         "summer2026": null
       },
-      "sessionNotes": "NAU publishes official term dates, but this audit did not independently verify a public term rotation for MKT 439.",
-      "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "sessionNotes": "The official NAU course page now provides course description text and a published 'Sections offered' indicator for this exact course code.",
+      "accessNote": "Prerequisite MKT 334; letter grade only.",
+      "evidenceLevel": "course_and_calendar"
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://nau.edu/search?q=MKT+439",
+        "title": "View Direct Course Artifact",
+        "url": "https://catalog.nau.edu/Courses/course?catalogYear=2526&courseId=005512",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -2351,7 +2359,11 @@ window.courseData = [
         "url": "https://in.nau.edu/registrar/important-dates/",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Course Page With Sections Offered",
+        "url": "https://catalog.nau.edu/Courses/course?catalogYear=2526&courseId=005512",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -2559,12 +2571,12 @@ window.courseData = [
         "url": "https://www.ou.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://www.ou.edu/search?q=MKT+3053"
+        "title": "View Direct Course Artifact",
+        "url": "https://www.ou.edu/content/dam/price/MIS/files/MIS%20Course-Descriptions-June-2016.pdf"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKT 3053: Solid R1 alignment emphasizing methods for primary and secondary data collection.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "unclear",
       "offeredTerms": [],
@@ -2574,14 +2586,14 @@ window.courseData = [
         "spring2027": null,
         "summer2026": null
       },
-      "sessionNotes": "OU publishes official academic calendars, but this audit did not independently verify a public term rotation for MKT 3053.",
-      "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "sessionNotes": "OU’s official course-description PDF confirms the course content, but this audit still did not capture public section-level schedule proof for MKT 3053.",
+      "accessNote": "Prerequisites include Price College degree candidacy approval plus statistics and spreadsheet preparation expectations.",
+      "evidenceLevel": "catalog_only"
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://www.ou.edu/search?q=MKT+3053",
+        "title": "View Direct Course Artifact",
+        "url": "https://www.ou.edu/content/dam/price/MIS/files/MIS%20Course-Descriptions-June-2016.pdf",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -2909,12 +2921,12 @@ window.courseData = [
         "url": "https://apu.apus.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://catalog.apus.edu/"
+        "title": "View Direct Course Artifact",
+        "url": "https://catalog.apus.edu/undergraduate/academic-programs/course-descriptions/mktg/"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKTG 400: Lacks AACSB/ACBSP specialized business accreditations, exposing the petition to rejection from R1 faculty.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "rolling",
       "offeredTerms": [],
@@ -2930,8 +2942,8 @@ window.courseData = [
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://catalog.apus.edu/",
+        "title": "View Direct Course Artifact",
+        "url": "https://catalog.apus.edu/undergraduate/academic-programs/course-descriptions/mktg/",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -2941,7 +2953,7 @@ window.courseData = [
       },
       "schedule": {
         "title": "Official Course Schedule Page",
-        "url": "https://www.apu.apus.edu/course-schedule/details/?c=MKTG400",
+        "url": "https://www.apus.edu/course-schedule/details.html?c=MKTG400",
         "verifiedOn": "2026-03-24"
       }
     }
@@ -2969,12 +2981,12 @@ window.courseData = [
         "url": "https://umgc.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://www.umgc.edu/academic-programs/catalogs"
+        "title": "View Direct Course Artifact",
+        "url": "https://www.umgc.edu/online-degrees/course-information.mrkt"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MRKT 412: Similarly lacks the premier business-specific accreditation tier OSU usually demands for upper division credit override.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "term",
       "offeredTerms": [
@@ -2988,13 +3000,13 @@ window.courseData = [
         "summer2026": "2026-05-13"
       },
       "sessionNotes": "UMGC publishes fixed 8-week undergraduate online sessions; this pass directly verified Spring 2026 and Summer 2026 session starts, but did not independently capture a Fall 2026 undergraduate start from the public calendar.",
-      "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "accessNote": "Prerequisites include MRKT 310 plus a statistics or BMGT methods prerequisite; credit not granted with BMGT 452.",
+      "evidenceLevel": "catalog_only"
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://www.umgc.edu/academic-programs/catalogs",
+        "title": "View Direct Course Artifact",
+        "url": "https://www.umgc.edu/online-degrees/course-information.mrkt",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -3028,12 +3040,12 @@ window.courseData = [
         "url": "https://bellevue.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://bellevue.edu/search?q=MKTG+406"
+        "title": "View Direct Course Artifact",
+        "url": "https://www.bellevue.edu/degrees/academic-catalog/course-listing/MKTG/"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKTG 406: Heavily focused on broader data decision-making rather than the specific deployment of marketing research surveys.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "rolling",
       "offeredTerms": [],
@@ -3043,14 +3055,14 @@ window.courseData = [
         "spring2027": null,
         "summer2026": null
       },
-      "sessionNotes": "Bellevue publishes academic sessions and accelerated online calendars, but this pass did not isolate a 2026-27 public term table for MKTG 406 specifically.",
-      "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "sessionNotes": "Bellevue’s official course listing now confirms the course description, but this pass still did not capture schedule or section-proof evidence for MKTG 406.",
+      "accessNote": "Bellevue notes that courses in this sequence must be taken in order.",
+      "evidenceLevel": "catalog_only"
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://bellevue.edu/search?q=MKTG+406",
+        "title": "View Direct Course Artifact",
+        "url": "https://www.bellevue.edu/degrees/academic-catalog/course-listing/MKTG/",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -3140,12 +3152,12 @@ window.courseData = [
         "url": "https://uclaextension.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://uclaextension.edu/search?q=MGMT+X+466"
+        "title": "View Direct Course Artifact",
+        "url": "https://www.uclaextension.edu/marketing-advertising-pr/course/consumer-market-research-mgmt-x-466"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MGMT X 466: Very strong course, but Extension designations ('X') are heavily scrutinized by OSU for direct Upper Division mapping.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "cohort",
       "offeredTerms": [],
@@ -3155,14 +3167,14 @@ window.courseData = [
         "spring2027": null,
         "summer2026": "2026-06-22"
       },
-      "sessionNotes": "UCLA Extension publishes quarter-based term calendars; Fall 2026 instruction begins Sept. 21 and Summer 2026 begins June 22, but the specific MGMT X 466 section should still be checked before enrolling.",
+      "sessionNotes": "UCLA Extension’s official course page now shows description text plus published section schedules and REG numbers, but the row remains cohort-cautioned under the repo’s extension rules.",
       "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "evidenceLevel": "course_and_calendar"
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://uclaextension.edu/search?q=MGMT+X+466",
+        "title": "View Direct Course Artifact",
+        "url": "https://www.uclaextension.edu/marketing-advertising-pr/course/consumer-market-research-mgmt-x-466",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -3170,7 +3182,11 @@ window.courseData = [
         "url": "https://www.uclaextension.edu/student-services/academic-term-calendar",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Course Page With Section Schedule",
+        "url": "https://www.uclaextension.edu/marketing-advertising-pr/course/consumer-market-research-mgmt-x-466",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -3364,12 +3380,12 @@ window.courseData = [
         "url": "https://online.ua.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://online.ua.edu/search?q=MKT+473"
+        "title": "View Direct Course Artifact",
+        "url": "https://catalog.ua.edu/undergraduate/business/marketing/courses/"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKT 473: Bama By Distance undergrad availability explicitly for this singular course without full program enrollment is uncertain.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "program_restricted",
       "offeredTerms": [],
@@ -3379,14 +3395,14 @@ window.courseData = [
         "spring2027": null,
         "summer2026": null
       },
-      "sessionNotes": "The course exists, but this audit did not verify standalone Bama By Distance access for this specific undergraduate course.",
-      "accessNote": "Do not assume online transient access without direct program confirmation.",
-      "evidenceLevel": "unclear"
+      "sessionNotes": "The official Alabama course list now confirms the course description and prerequisite chain, but this audit still did not verify standalone Bama By Distance section access for this exact course.",
+      "accessNote": "Extensive prerequisite chain and business-core progression mean practical access should be confirmed directly before treating this as open online inventory.",
+      "evidenceLevel": "catalog_only"
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://online.ua.edu/search?q=MKT+473",
+        "title": "View Direct Course Artifact",
+        "url": "https://catalog.ua.edu/undergraduate/business/marketing/courses/",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -3420,14 +3436,14 @@ window.courseData = [
         "url": "https://broad.msu.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://broad.msu.edu/search?q=MKT+300"
+        "title": "View Direct Course Artifact",
+        "url": "https://reg.msu.edu/Courses/Request.aspx?CourseNumber=300&SubjectCode=MKT"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKT 300: Lacks a dedicated undergraduate 'research methodologies' tag, blending analysis into generic managerial functions.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
-      "offeringModel": "unclear",
+      "offeringModel": "program_restricted",
       "offeredTerms": [],
       "termStartDates": {
         "fall2026": null,
@@ -3435,14 +3451,14 @@ window.courseData = [
         "spring2027": null,
         "summer2026": null
       },
-      "sessionNotes": "MSU publishes official academic calendars, but this audit did not independently verify a public term rotation for MKT 300.",
-      "accessNote": "",
-      "evidenceLevel": "calendar_only"
+      "sessionNotes": "MSU’s official course description page now confirms the exact course code, semesters offered, and enrollment limitations.",
+      "accessNote": "Official course description limits access to admitted business majors in the published eligible-major list.",
+      "evidenceLevel": "course_and_calendar"
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://broad.msu.edu/search?q=MKT+300",
+        "title": "View Direct Course Artifact",
+        "url": "https://reg.msu.edu/Courses/Request.aspx?CourseNumber=300&SubjectCode=MKT",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -3450,7 +3466,11 @@ window.courseData = [
         "url": "https://reg.msu.edu/ROInfo/Calendar/academic.aspx",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Course Description With Semesters Offered",
+        "url": "https://reg.msu.edu/Courses/Request.aspx?CourseNumber=300&SubjectCode=MKT",
+        "verifiedOn": "2026-03-24"
+      }
     }
   },
   {
@@ -3476,12 +3496,12 @@ window.courseData = [
         "url": "https://michiganross.umich.edu/"
       },
       {
-        "title": "Search Academic Catalog",
-        "url": "https://michiganross.umich.edu/search?q=MKT+718"
+        "title": "View Direct Course Artifact",
+        "url": "https://michiganross.umich.edu/courses/marketing-research-and-analytics-2910"
       }
     ],
     "catalogSnapshot": "\"Official institutional structure for MKT 718: Graduate-level designation will face extreme articulation friction at the undergraduate transfer desk.\"",
-    "exact_link_found": false,
+    "exact_link_found": true,
     "availabilityMeta": {
       "offeringModel": "program_restricted",
       "offeredTerms": [],
@@ -3491,14 +3511,14 @@ window.courseData = [
         "spring2027": null,
         "summer2026": null
       },
-      "sessionNotes": "This is an online MBA/graduate pathway rather than a standard undergraduate transfer route; Michigan’s registrar publishes general academic calendars, but Ross business students are directed to confirm their school-specific calendar separately.",
+      "sessionNotes": "The official Ross course page now confirms this graduate online MBA course and names a published offered term, but it remains a graduate-only pathway rather than a standard undergraduate transfer route.",
       "accessNote": "Graduate-only delivery makes this a poor fit for undergraduate transfer equivalency.",
       "evidenceLevel": "catalog_only"
     },
     "sources": {
       "course": {
-        "title": "Search Academic Catalog",
-        "url": "https://michiganross.umich.edu/search?q=MKT+718",
+        "title": "View Direct Course Artifact",
+        "url": "https://michiganross.umich.edu/courses/marketing-research-and-analytics-2910",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
@@ -3506,7 +3526,11 @@ window.courseData = [
         "url": "https://ro.umich.edu/calendars",
         "verifiedOn": "2026-03-24"
       },
-      "schedule": null
+      "schedule": {
+        "title": "Official Ross Course Page With Offered Term",
+        "url": "https://michiganross.umich.edu/courses/marketing-research-and-analytics-2910",
+        "verifiedOn": "2026-03-24"
+      }
     }
   }
 ];
@@ -3526,7 +3550,8 @@ const restrictedInstitutions = new Set([
   'University of Utah',
   'Indiana U. (Kelley)',
   'Arkansas State',
-  'Univ. of Alabama'
+  'Univ. of Alabama',
+  'Michigan State'
 ]);
 
 const graduateOnlyInstitutions = new Set([

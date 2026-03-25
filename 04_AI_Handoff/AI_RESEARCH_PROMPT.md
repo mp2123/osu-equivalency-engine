@@ -2,6 +2,12 @@
 
 Use this prompt with the handoff CSV files in this folder.
 
+Current package state:
+
+* `OSU_MRKT496_AI_Research_Queue.csv`: `42` unresolved rows
+* `OSU_MRKT496_Missing_Direct_Course_Links.csv`: `3` rows
+* `OSU_MRKT496_Verified_Link_Polish_Queue.csv`: `8` optional polish rows
+
 ## Prompt
 
 You are helping improve an Oregon State University MRKT 496 transfer-equivalency research repo.
@@ -42,8 +48,12 @@ If you cannot improve a row from public sources, say that explicitly instead of 
 
 ### `OSU_MRKT496_AI_Research_Queue.csv`
 
-Use this for the full unresolved sourcing queue.
+Use this first. It contains the rows that are still not fully resolved.
 
 ### `OSU_MRKT496_Missing_Direct_Course_Links.csv`
 
 Use this if you want the narrower task of improving exact direct course-description links only.
+
+### `OSU_MRKT496_Verified_Link_Polish_Queue.csv`
+
+Use this only after the unresolved queue is done. These rows are already operational, and the task is just to improve the stored schedule/class-search source quality.

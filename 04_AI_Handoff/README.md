@@ -4,26 +4,39 @@ This folder is the clean handoff surface for any follow-on AI or researcher.
 
 Use this folder instead of guessing from the dashboard code or browsing the full repo.
 
+Current handoff state after the latest source-ingestion pass:
+
+* `42` rows remain operationally unresolved and still need research
+* `3` rows still lack an exact direct course-description link
+* `8` rows are already `Fully Verified` but could still be polished with a cleaner schedule/class-search source
+
 ## Files
 
 ### `OSU_MRKT496_AI_Research_Queue.csv`
 
 Primary handoff spreadsheet.
 
-This file lists every course row that still has at least one meaningful sourcing gap, such as:
+This file now lists only the rows that are still operationally unresolved, meaning they are not currently `Fully Verified`.
 
-* no exact direct course description link
+Typical reasons include:
+
 * no direct schedule or section-proof URL
 * conservative evidence state like `calendar_only`, `catalog_only`, or `unclear`
-* non-verified verification states like `Calendar Only`, `Restricted Access`, `Cohort Timing`, or `Graduate Only`
+* verification state is still `Calendar Only`, `Restricted Access`, `Cohort Timing`, or `Graduate Only`
 
-The CSV is designed so another AI can work row-by-row without having to reverse-engineer the dashboard schema.
+This is the file to use first.
 
 ### `OSU_MRKT496_Missing_Direct_Course_Links.csv`
 
-Narrower list containing only the rows where an exact direct course-artifact link was not found.
+Narrower list containing only the `3` rows where an exact direct course-artifact link was not found.
 
 This is the best file to use if the follow-on AI should focus only on better course-description URLs.
+
+### `OSU_MRKT496_Verified_Link_Polish_Queue.csv`
+
+Optional polish list for rows that are already `Fully Verified` but still do not have the cleanest possible public schedule/class-search source stored in the repo.
+
+This file is not the main priority. Use it only after the unresolved queue is exhausted.
 
 ## How To Use With Another AI
 
@@ -54,5 +67,11 @@ The course may exist and even be scheduled, but access is limited by major, clas
 ### `Fully Verified`
 
 The exact course code is tied to official public course or schedule evidence plus calendar support.
+
+## Recommended Order
+
+1. Start with `OSU_MRKT496_AI_Research_Queue.csv`
+2. If you want to narrow the task, use `OSU_MRKT496_Missing_Direct_Course_Links.csv`
+3. Use `OSU_MRKT496_Verified_Link_Polish_Queue.csv` only for optional cleanup after the unresolved queue is done
 
 For the full website terminology guide, also read [V12_Dashboard_Glossary.md](/Users/michael_s_panico/Desktop/DevBase/active_projects/OSU%20Transfer%20Equivalency%20Research/02_Operational_Guides/V12_Dashboard_Glossary.md).
