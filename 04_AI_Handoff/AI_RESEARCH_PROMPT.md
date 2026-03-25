@@ -1,0 +1,49 @@
+# Ready-to-Paste AI Research Prompt
+
+Use this prompt with the handoff CSV files in this folder.
+
+## Prompt
+
+You are helping improve an Oregon State University MRKT 496 transfer-equivalency research repo.
+
+I am giving you a CSV where each row is a university course that still has one or more sourcing gaps.
+
+Your job:
+
+1. Work row by row.
+2. Use only official university or provider sources.
+3. Prefer exact course-detail, course-description, bulletin, catalog, registrar, and official class-search pages.
+4. Try to improve the row in this order:
+   * find an exact direct official course-description page for the exact course code
+   * find official live schedule, archived schedule, or official class-search proof tied to the exact course code
+   * confirm whether the published access restrictions are real and should stay
+   * do not infer recurring course cadence from the institution calendar alone
+5. If the row is marked `Restricted Access`, preserve that unless official evidence clearly disproves it.
+6. If the row is marked `Cohort Timing`, do not convert it into a normal semester rotation without explicit proof.
+7. If the row is marked `Graduate Only`, do not treat it as a clean undergraduate analogue unless official evidence supports that claim.
+
+Return results in a structured table with these columns:
+
+* institution
+* course_code
+* better_course_source_url
+* better_schedule_source_url
+* better_calendar_source_url
+* evidence_found_summary
+* can_promote_to_course_and_calendar (`yes` or `no`)
+* should_verification_status_change (`yes` or `no`)
+* recommended_verification_status
+* access_restrictions_found
+* notes
+
+If you cannot improve a row from public sources, say that explicitly instead of guessing.
+
+## Which File To Use
+
+### `OSU_MRKT496_AI_Research_Queue.csv`
+
+Use this for the full unresolved sourcing queue.
+
+### `OSU_MRKT496_Missing_Direct_Course_Links.csv`
+
+Use this if you want the narrower task of improving exact direct course-description links only.

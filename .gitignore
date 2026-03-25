@@ -13,6 +13,7 @@ venv.bak/
 local_tmp/
 .gemini/
 *.log
+output/
 
 # Node/NPM (Just in case you add it later)
 node_modules/

@@ -49,6 +49,7 @@ See [02_Operational_Guides/V12_Dashboard_Glossary.md](/Users/michael_s_panico/De
 | 📁 `01_Equivalency_Reports/` | Formal markdown petition documents. Includes the exact rhetorical frameworks and logic required to present to the OSU R1 Faculty review desk. |
 | 📁 `02_Operational_Guides/` | User-facing operational docs, including the dashboard glossary that explains all website terminology and evidence states. |
 | 📁 `03_Raw_Data/` | Sandbox directory for staging unvetted university leads or downloading PDF syllabus documents. |
+| 📁 `04_AI_Handoff/` | Clean handoff package for follow-on AI research, including a row-by-row sourcing queue and a direct-link recovery list. |
 | 📄 `README.md` | This architectural map. |
 
 ---
