@@ -23,7 +23,7 @@ window.courseData = [
       },
       {
         "title": "View Direct Course Artifact",
-        "url": "https://ecampus.oregonstate.edu/soc/ecatalog/course-detail.htm?subject=MRKT&crsCode=496"
+        "url": "https://ecampus.oregonstate.edu/soc/ecatalog/ecoursedetail.htm?subject=MRKT&coursenumber=496&termcode=ALL"
       }
     ],
     "catalogSnapshot": "\"Provides the student with practical experience in the collection, analysis and interpretation of primary data. Students design a complete marketing research project.\"",
@@ -46,7 +46,7 @@ window.courseData = [
     "sources": {
       "course": {
         "title": "View Direct Course Artifact",
-        "url": "https://ecampus.oregonstate.edu/soc/ecatalog/course-detail.htm?subject=MRKT&crsCode=496",
+        "url": "https://ecampus.oregonstate.edu/soc/ecatalog/ecoursedetail.htm?subject=MRKT&coursenumber=496&termcode=ALL",
         "verifiedOn": "2026-03-24"
       },
       "calendar": {
