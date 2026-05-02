@@ -1,0 +1,32 @@
+name: Static Dashboard Smoke
+
+on:
+  pull_request:
+    paths:
+      - "Interactive_Dashboard/**"
+      - "scripts/static-smoke.mjs"
+      - "package.json"
+      - ".github/workflows/static-smoke.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "Interactive_Dashboard/**"
+      - "scripts/static-smoke.mjs"
+      - "package.json"
+      - ".github/workflows/static-smoke.yml"
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Run static smoke check
+        run: npm test

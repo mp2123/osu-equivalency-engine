@@ -1,0 +1,13 @@
+{
+  "name": "osu-equivalency-engine",
+  "version": "12.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/static-smoke.mjs",
+    "smoke": "node scripts/static-smoke.mjs"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
